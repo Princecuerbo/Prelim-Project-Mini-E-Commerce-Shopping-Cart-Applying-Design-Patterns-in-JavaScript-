@@ -1,0 +1,1 @@
+# Prelim-Project-Mini-E-Commerce-Shopping-Cart-Applying-Design-Patterns-in-JavaScript-
