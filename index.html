@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHub Philippines - E-Commerce Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>🛍️ Mini E-Commerce Store</h1>
+        
+    </header>
+    
+    <main>
+        <section id="products" class="products-section">
+            <h2>🔥 Our Products</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be dynamically added here -->
+            </div>
+        </section>
+        
+        <section id="cart" class="cart-section">
+            <h2>🛒 Shopping Cart</h2>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-summary">
+                <div class="cart-total">
+                    <h3>Total Amount: <span class="peso-sign">₱</span><span id="totalPrice">0.00</span></h3>
+                </div>
+                <div class="cart-actions">
+                    <button id="clearCart">🗑️ Clear Cart</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="features" class="features-section">
+            <h2>🎁 Additional Features</h2>
+            <div class="features-options">
+                <label>
+                    <input type="checkbox" id="giftWrap"> 🎀 Gift Wrap (+₱149.99)
+                </label>
+                <label>
+                    <input type="checkbox" id="discount"> 💰 10% Discount
+                </label>
+                <label>
+                    <input type="checkbox" id="freeShipping"> 🚚 Free Shipping
+                </label>
+            </div>
+            <div class="feature-status" id="featureStatus">
+                📝 Features will be applied to new items added to cart
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/factoryPattern.js"></script>
+    <script src="js/decoratorPattern.js"></script>
+    <script src="js/observerPattern.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Assuming `item` is defined and has `name` and `price` properties
+const formattedPrice = item.price.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+cartItemDiv.innerHTML = `<span>${item.name} - ₱${formattedPrice}</span>`;
+    </script>
+</body>
+</html>
